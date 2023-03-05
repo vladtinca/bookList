@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b8102073a3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>My BookList APP</title>
+
+</head>
+
+<body>
+    <div class="input-container">
+        <h1><i class="fas fa-book-open"></i>My<span>BookList</span>APP</h1>
+        <div class="filter-area">
+            <label for="search">Search</label>
+            <input type="text" id="search">
+        </div>
+        <form id="book-form">
+            <div id="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" class="form-control">
+            </div>
+            <div id="form-group">
+                <label for="author">Author</label>
+                <input type="text" id="author" class="form-control">
+            </div>
+            <div id="form-group">
+                <label for="isbn">ISBN#</label>
+                <input type="text" id="isbn" class="form-control">
+            </div>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="table-container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="narrow-col">Nr.</th>
+                    <th class="title-col">Title</th>
+                    <th class="normal-col">Author</th>
+                    <th class="normal-col">ISBN</th>
+                    <th class="narrow-col"></th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
